@@ -1,0 +1,64 @@
+$primary-color: #4f46e5;
+$secondary-color: #f3f4f6;
+$font-stack: 'Segoe UI', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  background: $secondary-color;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+
+  h1 {
+    color: $primary-color;
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: $primary-color;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+
+    &:hover {
+      background: darken($primary-color, 10%);
+    }
+  }
+}
+
+section {
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
