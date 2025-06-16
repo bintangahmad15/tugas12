@@ -18,37 +18,64 @@ body {
 
 header {
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
   background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
   color: white;
 
   h1 {
     font-size: 3rem;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
   }
 
   .btn {
-    display: inline-block;
     margin-top: 20px;
+    display: inline-block;
     background: $primary-color;
     color: white;
-    padding: 10px 25px;
+    padding: 12px 30px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background 0.3s;
+    transition: background 0.3s ease;
 
     &:hover {
-      background: darken($primary-color, 10%);
+      background: darken($primary-color, 15%);
     }
   }
 }
 
 section {
-  max-width: 800px;
-  margin: 40px auto;
+  max-width: 900px;
+  margin: 50px auto;
   padding: 20px;
   background: white;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+  h2 {
+    margin-bottom: 15px;
+    color: $primary-color;
+  }
+
+  p, ul {
+    margin-bottom: 15px;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  img {
+    width: 30%;
+  }
 }
 
 footer {
@@ -56,14 +83,17 @@ footer {
   padding: 20px;
   background: #b2ebf2;
   border-radius: 10px;
+  margin-top: 50px;
 }
 
 @media (max-width: 600px) {
   header h1 {
     font-size: 2rem;
   }
-
   .btn {
+    width: 100%;
+  }
+  .gallery img {
     width: 100%;
   }
 }
