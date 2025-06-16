@@ -1,65 +1,18 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Segoe UI", sans-serif;
-  background: #e0f7fa;
-  color: #333;
-  padding: 20px;
-  line-height: 1.6;
-}
-
-header {
-  text-align: center;
-  padding: 60px 20px;
-  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
-  color: white;
-}
-
-header h1 {
-  font-size: 3rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-header .btn {
-  display: inline-block;
-  margin-top: 20px;
-  background: #00aaff;
-  color: white;
-  padding: 10px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-header .btn:hover {
-  background: #0088cc;
-}
-
-section {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #b2ebf2;
-  border-radius: 10px;
-}
-
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  .btn {
-    width: 100%;
-  }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Segoe UI",sans-serif;background:#e0f7fa;color:#333;padding:20px;line-height:1.6}
+header{text-align:center;padding:80px 20px;background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;color:#fff}
+header h1{font-size:3rem;text-shadow:2px 2px 8px rgba(0,0,0,0.7)}
+header .btn{margin-top:20px;display:inline-block;background:#00aaff;color:#fff;padding:12px 30px;border-radius:5px;text-decoration:none;transition:background .3s ease}
+header .btn:hover{background:#0077aa}
+section{max-width:900px;margin:50px auto;padding:20px;background:#fff;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,0.1)}
+section h2{margin-bottom:15px;color:#00aaff}
+section p,section ul{margin-bottom:15px}
+section img{max-width:100%;border-radius:8px;margin-top:10px}
+.gallery{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.gallery img{width:30%}
+footer{text-align:center;padding:20px;background:#b2ebf2;border-radius:10px;margin-top:50px}
+@media(max-width:600px){
+  header h1{font-size:2rem}
+  .btn{width:100%}
+  .gallery img{width:100%}
 }
