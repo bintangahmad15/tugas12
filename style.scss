@@ -1,5 +1,5 @@
-$primary-color: #4f46e5;
-$secondary-color: #f3f4f6;
+$primary-color: #00aaff;
+$secondary-color: #e0f7fa;
 $font-stack: 'Segoe UI', sans-serif;
 
 * {
@@ -12,27 +12,29 @@ body {
   font-family: $font-stack;
   background: $secondary-color;
   color: #333;
-  line-height: 1.6;
   padding: 20px;
+  line-height: 1.6;
 }
 
 header {
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
+  color: white;
 
   h1 {
-    color: $primary-color;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
   }
 
   .btn {
     display: inline-block;
     margin-top: 20px;
     background: $primary-color;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
     border-radius: 5px;
+    text-decoration: none;
     transition: background 0.3s;
 
     &:hover {
@@ -42,20 +44,23 @@ header {
 }
 
 section {
-  margin: 40px auto;
   max-width: 800px;
+  margin: 40px auto;
   padding: 20px;
+  background: white;
+  border-radius: 10px;
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background: #ddd;
+  background: #b2ebf2;
+  border-radius: 10px;
 }
 
 @media (max-width: 600px) {
   header h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .btn {
